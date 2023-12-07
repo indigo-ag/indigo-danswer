@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: indigo-danswer
+  description: Ask Questions in natural language and get Answers backed by private sources. Connects to tools like Slack, GitHub, Confluence, etc.
+  links:
+    - url: "https://indigoag.slack.com/archives/C045DSGNBFX"
+      title: devops-trunk
+      icon: chat
+    - url: docs.danswer.dev
+      title: Danswer Docs (external)
+      icon: docs
+  annotations:
+    backstage.io/view-url: https://github.com/indigo-ag/indigo-danswer/blob/-/catalog-info.yaml # req
+    backstage.io/edit-url: https://github.com/indigo-ag/indigo-danswer/edit/-/catalog-info.yaml # req
+    backstage.io/source-location: url:https://github.com/indigo-ag/indigo-danswer # req
+    circleci.com/project-slug: github/indigo-ag/indigo-danswer
+    # Got a datadog dashboard? Link it here:
+    # datadoghq.com/dashboard-url: https://datadog.com....
+    github.com/project-slug: indigo-ag/indigo-danswer
+    pagerduty.com/integration-key: DevOps
+    sentry.io/project-slug: indigo-danswer
+spec:
+  type: service # service | website | library | tool | documentation | other
+  lifecycle: experimental # experimental | production | deprecated | audit
+  owner: group:default/team-devops-trunk
+  system: system:default/base-cloud-infrastructure
